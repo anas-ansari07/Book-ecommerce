@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { mobile } from "../responsive";
 
+{/*
 const Container = styled.div``;
 
 const Wrapper = styled.div`
@@ -250,3 +251,4 @@ const Cart = () => {
 };
 
 export default Cart;
+*/}

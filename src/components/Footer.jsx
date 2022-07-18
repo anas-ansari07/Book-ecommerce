@@ -114,11 +114,11 @@ const Footer = () => {
         <Title>Useful Links</Title>
         <List>
           <ListItem>Home</ListItem>
-          <Link to="/Cars">Cart</Link>
+          <ListItem>Cart</ListItem>
           
           <ListItem>Categories</ListItem>
           <ListItem>My Account</ListItem>
-          <ListItem>Order Tracking</ListItem>
+           
           
           <ListItem>Wishlist</ListItem>
           <ListItem>Terms</ListItem>
