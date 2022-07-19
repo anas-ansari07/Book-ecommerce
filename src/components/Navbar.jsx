@@ -74,16 +74,16 @@ const Navbar = () => {
         <Left>
           <Language>EN</Language>
           <SearchContainer>
-            <Input placeholder="Search" />
-            <Search style={{ color: "gray", fontSize: 16 }} />
+            <Input placeholder="Search for books...." />
+           {/* <Search style={{ color: "gray", fontSize: 16 }} />*/}
           </SearchContainer>
         </Left>
         <Center>
           <Logo>BOOKISH</Logo>
         </Center>
         <Right>
-          <Link to="/register">REGISTER</Link>
-          <Link to ="/login">SIGN IN</Link>
+          <Link to="/Register">REGISTER</Link>
+          <Link to ="/Login">SIGN IN</Link>
           
           <MenuItem>
             <Badge badgeContent={4} color="primary">
