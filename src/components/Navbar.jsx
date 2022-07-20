@@ -1,9 +1,11 @@
 import { Badge } from "@material-ui/core";
 import { Search, ShoppingCartOutlined } from "@material-ui/icons";
-import React from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
 import { mobile } from "../responsive";
 import { Link } from 'react-router-dom';
+
+
 
 const Container = styled.div`
   height: 60px;
@@ -30,13 +32,13 @@ const Language = styled.span`
   ${mobile({ display: "none" })}
 `;
 
-const SearchContainer = styled.div`
-  border: 0.5px solid lightgray;
-  display: flex;
-  align-items: center;
-  margin-left: 25px;
-  padding: 5px;
-`;
+// const SearchContainer = styled.div`
+//   border: 0.8px solid lightgray;
+//   display: flex;
+//   align-items: center;
+//   margin-left: 25px;
+//   padding: 5px;
+// `;
 
 const Input = styled.input`
   border: none;
@@ -57,6 +59,7 @@ const Right = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  
   ${mobile({ flex: 2, justifyContent: "center" })}
 `;
 
@@ -73,20 +76,16 @@ const Navbar = () => {
       <Wrapper>
         <Left>
           <Language>EN</Language>
-          <SearchContainer>
-            <Input placeholder="Search for books...." />
-           {/* <Search style={{ color: "gray", fontSize: 16 }} />*/}
-          </SearchContainer>
+        <b><MenuItem><Link to="main"> Search </Link></MenuItem></b>
         </Left>
         <Center>
           <Logo>BOOKISH</Logo>
         </Center>
         <Right>
-          <Link to="/Register">REGISTER</Link>
-          <Link to ="/Login">SIGN IN</Link>
-          
+          <b><MenuItem><Link to="/Register">REGISTER</Link></MenuItem></b>
+          <b><MenuItem><Link to ="/Login">SIGN IN</Link></MenuItem></b>
           <MenuItem>
-            <Badge badgeContent={4} color="primary">
+            <Badge badgeContent={0} color="primary">
               <ShoppingCartOutlined />
             </Badge>
           </MenuItem>
